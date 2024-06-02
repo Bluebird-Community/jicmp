@@ -22,22 +22,22 @@ Clone the respository on local disk
 git clone https://github.com/OpenNMS/jicmp.git
 ```
 
-.Switch into source code repository
+Switch into source code repository
 ```bash
 cd jicmp
 ```
 
-.Initialize and update the git submodule.
+Initialize and update the git submodule.
 ```bash
 git submodule update --init --recursive
 ```
 
-.Update generated configuration files with
+Update generated configuration files with
 ```bash
 autoreconf -fvi
 ```
 
-.Generate make files using `/usr/local/lib` as install path and compile JICMP
+Generate make files using `/usr/local/lib` as install path and compile JICMP
 ```bash
 ./configure
 make
@@ -46,7 +46,7 @@ make
 > [!TIP]
 > If you want to change the install path the `./configure --prefix=/your/custom/path` can be used.
 
-.Install the library on your system, root permissions may required when working as non-root user.
+Install the library on your system, root permissions may required when working as non-root user.
 ```bash
 sudo make install
 ```
@@ -67,3 +67,4 @@ sysctl -w net.ipv4.ping_group_range="0 429496729"
 ```bash
 echo "net.ipv4.ping_group_range=0 429496729" > /etc/sysctl.d/03-non-root-icmp.conf
 ```
+
