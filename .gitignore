@@ -15,7 +15,7 @@
 .settings
 .vscode
 target
-Makefile
+./Makefile
 Makefile.in
 aclocal.m4
 autom4te.cache
@@ -68,3 +68,6 @@ package-lock.json
 /win32/ipch
 /win32/Release
 /win32/x86
+
+build-env/Dockerfile
+*.oci
