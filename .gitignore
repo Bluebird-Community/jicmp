@@ -71,3 +71,7 @@ package-lock.json
 
 build-env/Dockerfile
 *.oci
+
+# IntelliJ IDEA
+.idea/
+
