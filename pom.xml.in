@@ -6,14 +6,14 @@
   <version>@VERSION@-SNAPSHOT</version>
   <packaging>bundle</packaging>
 
-  <name>OpenNMS ICMP API</name>
+  <name>BluebirdOps ICMP API</name>
   <description>Java JNI API for ICMP</description>
-  <url>https://github.com/opennms/jicmp</url>
+  <url>https://github.com/bluebird-community/jicmp</url>
   <inceptionYear>2002</inceptionYear>
 
   <organization>
-    <name>The OpenNMS Group, Inc.</name>
-    <url>https://www.opennms.com/</url>
+    <name>BluebirdOps Community</name>
+    <url>https://github.com/bluebird-community/</url>
   </organization>
   <licenses>
     <license>
@@ -31,7 +31,7 @@
     <developer>
       <id>ronny</id>
       <name>Ronny Trommer</name>
-      <email>r.trommer@open-factory.org</email>
+      <email>ronny@no42.org</email>
     </developer>
     <developer>
       <id>ajb</id>
@@ -68,22 +68,22 @@
     </contributor>
   </contributors>
   <scm>
-    <connection>scm:git:https://github.com/opennms/jicmp.git</connection>
-    <developerConnection>scm:git:git@github.com:opennms/jicmp.git</developerConnection>
-    <url>https://github.com/opennms/jicmp</url>
+    <connection>scm:git:https://github.com/bluebird-community/jicmp.git</connection>
+    <developerConnection>scm:git:git@github.com:bluebird-community/jicmp.git</developerConnection>
+    <url>https://github.com/bluebird-community/jicmp</url>
   </scm>
   <issueManagement>
-    <system>JIRA</system>
-    <url>https://issues.opennms.org/projects/JICMP/issues</url>
+    <system>GitHub Issues</system>
+    <url>https://github.com/Bluebird-Community/jicmp/issues</url>
   </issueManagement>
   <distributionManagement>
-    <snapshotRepository>
-      <id>opennms-ossrh</id>
-      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-    </snapshotRepository>
-    <repository>
-      <id>opennms-ossrh</id>
-      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+	<snapshotRepository>
+	  <id>cloudsmith</id>
+	  <url>https://maven.cloudsmith.io/bluebird/bbo-third-party/</url>
+	</snapshotRepository>
+	<repository>
+	  <id>cloudsmith</id>
+	  <url>https://maven.cloudsmith.io/bluebird/bbo-third-party/</url>
     </repository>
   </distributionManagement>
   <build>
@@ -104,7 +104,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.10.1</version>
+        <version>3.14.0</version>
         <configuration>
           <source>@JAVA_TARGET_VERSION@</source>
           <target>@JAVA_TARGET_VERSION@</target>
@@ -116,7 +116,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-source-plugin</artifactId>
-        <version>3.2.1</version>
+        <version>3.3.1</version>
         <executions>
           <execution>
             <goals>
@@ -128,22 +128,11 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
-        <version>3.4.1</version>
+        <version>3.11.2</version>
         <configuration>
           <aggregate>true</aggregate>
           <notimestamp>true</notimestamp>
           <use>false</use>
-        </configuration>
-      </plugin>
-      <plugin>
-        <groupId>org.sonatype.plugins</groupId>
-        <artifactId>nexus-staging-maven-plugin</artifactId>
-        <version>1.6.13</version>
-        <extensions>true</extensions>
-        <configuration>
-          <serverId>opennms-ossrh</serverId>
-          <nexusUrl>https://oss.sonatype.org/</nexusUrl>
-          <autoReleaseAfterClose>true</autoReleaseAfterClose>
         </configuration>
       </plugin>
     </plugins>
@@ -151,7 +140,7 @@
       <extension>
         <groupId>org.apache.maven.wagon</groupId>
         <artifactId>wagon-ssh-external</artifactId>
-        <version>3.5.2</version>
+        <version>3.5.3</version>
       </extension>
     </extensions>
   </build>
@@ -163,7 +152,7 @@
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-gpg-plugin</artifactId>
-            <version>3.0.1</version>
+            <version>3.2.7</version>
             <executions>
               <execution>
                 <id>sign-artifacts</id>

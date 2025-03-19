@@ -3,7 +3,7 @@
 
 m4_include([version.m4])
 AC_PREREQ([2.69])
-AC_INIT([jicmp],[VERSION_NUMBER],[http://www.opennms.org])
+AC_INIT([jicmp],[VERSION_NUMBER],[https://github.com/Bluebird-Community])
 
 AC_ARG_WITH([rpm-release],[  --with-rpm-release=RELEASE  The RPM release number (default: 1)], RELEASE="$withval", RELEASE="1")
 AC_SUBST([RELEASE])
