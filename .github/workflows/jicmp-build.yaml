@@ -2,6 +2,7 @@
 name: jicmp-build
 run-name: Build JICMP
 on:
+  workflow_dispatch:
   push:
 
 ## Build and create the project on every push to the project
