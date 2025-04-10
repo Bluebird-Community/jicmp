@@ -59,7 +59,7 @@ generatePackage() {
 		--description "Java interface to ICMP (ping)" \
 		--vendor "BluebirdOps" \
 		--license "LGPLv3" \
-		--maintainer "maintainer@bluebirdlabs.tech" \
+		--maintainer "maintainer@bluebirdops.org" \
 		--url "https://github.com/bluebird-community/jicmp" \
 		--version "${VERSION}" \
 		-t "${_type}" \
