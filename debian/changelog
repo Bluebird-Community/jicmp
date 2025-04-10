@@ -1,3 +1,5 @@
+jicmp (3.0.8-1) stable; urgency=low
+
 jicmp (3.0.7-1) stable; urgency=low
 
   * Remove hard coded Maven cache server dependency
