@@ -1,5 +1,9 @@
 jicmp (3.0.7-1) stable; urgency=low
 
+  * Remove hard coded Maven cache server dependency
+
+ -- Ronny Trommer <ronny@no42.org>  Thu, 10 Apr 2025 13:17:00 +0200
+
 jicmp (3.0.6-1) stable; urgency=low
 
   * Change build infrastructure to GitHub Actions.

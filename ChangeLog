@@ -1,5 +1,6 @@
 3.0.7
 -----
+* Remove hard coded Maven cache server dependency
 
 3.0.6
 -----
